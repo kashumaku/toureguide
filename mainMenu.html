@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>Registration</title>
+    <script type="text/javascript">
+	var condition=true;
+  function tour(){
+  if(condition){
+  var menu="<h4><a href='tanamon.html' target='display' style='text-decoration:none'>Monastries</a><br>"
+  +"<a href='tisabay.html' target='display'style='text-decoration:none'>Blue Nile fall</a><br>"
+  +"<a href='semaetat.html' target='display'style='text-decoration:none'>semaetat</a><br>"
+  +"<a href='tana.html' target='display'style='text-decoration:none'>Tana</a></h4>";
+  document.getElementById('tourplaces').innerHTML=menu;
+  condition=false;
+  }
+  else{
+    document.getElementById('tourplaces').innerHTML="";
+	condition=true;
+  }
+ 
+  }
+  </script>
+  <style type="text/css">
+  #button{
+  font-family:elephant;
+  font-size:15px;
+  color:black
+ 
+  }
+  </style>
+</head>
+<body>
+<hr>
+<fieldset>
+<legend><h2>MENU</h2></legend>
+<a href="home.html" target="display" style="text-decoration:none">Home</a><br>
+<a href="aboutbahirdar.html" target="display" style="text-decoration:none">Bahirdar city</a>	<br>
+<a href="tourplaces.html" target="display" style="text-decoration:none">Tour places</a><br>
+<a href="registration.html" target="display" style="text-decoration:none">Tourist registration</a>	<br>	
+<a href="about us.html" target="display" style="text-decoration:none">About us</a><br>
+<div id="button">
+
+<p><pre><b><mark>
+press the button below 
+to view detail about
+the beautiful tourist 
+attraction places.
+</b></mark>
+</div>
+<input type="button" value="Tour places" onclick="tour()">
+</pre>
+</p>
+<div id="tourplaces"></div>	
+</fieldset>
+
+</body>
+</html>
